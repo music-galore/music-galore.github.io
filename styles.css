@@ -1,0 +1,102 @@
+h1 {
+  font-size: 110px;
+  color: #ffffff;
+  font-style: oblique;
+}
+
+h3 {
+  font-size: 120px;
+  color: #ffffff;
+}
+
+
+
+
+body {
+  font-style: oblique;
+  background-color: #33ccff;
+  font-size: 30px;
+}
+
+header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+}
+
+.column {
+    float: left;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #ff6600;
+}
+
+
+
+
+
+
+
+
+div.scrollmenu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+}
+h2 {
+  color:#ffffff
+}
+
+p{
+  color:#ffffff
+}
+
+
+.btn-group button {
+    background-color: White; /* Green background */
+    border: 1px solid white; /* Green border */
+    color: black; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}

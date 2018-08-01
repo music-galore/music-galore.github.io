@@ -1,0 +1,375 @@
+<!Doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="head.css">
+  <script src="head2.js"></script>
+</head>
+  <a href="index.html">Home</a>:
+<body>
+  <h3> WELCOME TO NO CAP🧢</h3>
+
+<h2> This is the No Cap page for artist who are on the rise </h2>
+
+<div class="scrollmenu">
+<a href="index.html">Home</a>
+<a href="cltculture.html">CLT Culture</a>
+<a href="lowkey.html">LOWKEY</a>
+<a href="lowkeyfire.html">FOR REAL</a>
+<a href="nocap.html">NO CAP</a>
+</div>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Audio Player</title>
+    <style>
+        #playlist{
+            list-style: none;
+        }
+        #playlist li a{
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+    </style>
+    <script>
+    function audioPlayer(){
+            var currentSong = 0;
+            $("#audioPlayer")[0].src = $("#playlist li a")[0];
+            $("#audioPlayer")[0].play();
+            $("#playlist li a").click(function(e){
+               e.preventDefault();
+               $("#audioPlayer")[0].src = this;
+               $("#audioPlayer")[0].play();
+               $("#playlist li").removeClass("current-song");
+                currentSong = $(this).parent().index();
+                $(this).parent().addClass("current-song");
+            });
+
+            $("#audioPlayer")[0].addEventListener("ended", function(){
+               currentSong++;
+                if(currentSong == $("#playlist li a").length)
+                    currentSong = 0;
+                $("#playlist li").removeClass("current-song");
+                $("#playlist li:eq("+currentSong+")").addClass("current-song");
+                $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+                $("#audioPlayer")[0].play();
+            });
+        }
+    </script>
+    <!-- Source Code From YouTube.com/MicroTechTutorials  you may remove this message on your webpage but please do not redistribtue -->
+</head>
+<!--<body>-->
+    <audio src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    </audio>
+    <ul id="playlist">
+        <li class="current-song"><a href="blacktivist.mp3">Blacktivist by Flatbush Zombies</a></li>
+        <li><a href="song1.mp3">1997 Diana by Brockhampton</a></li>
+        <li><a href="song2.mp3">10,000 Hours by PrettyMuch</a></li>
+        <li><a href="eden.mp3">Nowhere Else by Eden</a></li>
+        <li><a href="sunflower.mp3">Sunflower by Rex Orange County</a></li>
+        <li><a href="moron.mp3">Moron by Steve Lacy</a></li>
+        <li><a href="sweetlife.mp3">Sweet Life by Jooyoung</a></li>
+        <li><a href="shotforme.mp3">Shot for me by Drake </a></li>
+        <li><a href="childsplay.mp3">Child's Play by SZA </a></li>
+        <li><a href="dancedance.mp3">Dance, Dance by Fall Out Boy</a></li>
+        <li><a href="mutual.mp3">Mutual by Shawn Mendes</a></li>
+        <li><a href="move.mp3">Move by Saint Motel</a></li>
+        <li><a href="drive.mp3">Drive by Jay Park</a></li>
+        <li><a href="tokyoo.mp3">Tokyo by Brockhampton</a></li>
+        <li><a href="focus.mp3">Focus by H.E.R</a></li>
+        <li><a href="party.mp3">Party(shut down) by Sik-k</a></li>
+
+    </ul>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <!-- <script src="audioPlayer.js"></script> -->
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
+
+<div class="btn-group">
+  <a href="nocap.html#rapsection"><button>Rap</button></a>
+  <a href="nocap.html#indiesection"><button>Indie</button></a>
+  <a href="nocap.html#alternativesection"><button>Alternative</button></a>
+  <a href="nocap.html#popsection"><button>Pop</button></a>
+  <a href="nocap.html#randbsection"><button>R&B</button></a>
+  <a href="nocap.html#internationalsection"><button>International</button></a>
+</div>
+
+<h1 id="rapsection">Rap </h1>
+
+<div> <em>XXXTentacion</em> Jahseh Dwayne Ricardo Onfroy, known professionally as XXXTentacion, was an American rapper, singer, and songwriter. After recently passing, his mark has permanently left on the hip hop community.</div>
+<p>
+<a href="https://www.instagram.com/xxxtentacion/?hl=en"> His instagram</a>
+<a href="https://twitter.com/xxxtentacion"> His twitter</a>
+<a href="https://soundcloud.com/jahseh-onfroy"> His soundcloud</a> </p>
+<img src="xx2.jpg">
+
+<div> <em>Amine</em> Adam Aminé Daniel, known professionally as Aminé, is an American rapper, singer and songwriter. He is best known for his commercial debut single, "Caroline", which peaked at number 11 on the US Billboard Hot 100 chart.</div>
+<a href="https://www.instagram.com/amine/?hl=en"> His instagram</a>
+<a href="https://twitter.com/heyamine?lang=en"> His twitter</a>
+<a href="https://open.spotify.com/artist/3Gm5F95VdRxW3mqCn8RPBJ"> Listen to his music</a> </p>
+<img src="amine2.jpg">
+
+<div> <em>Saweetie</em> Diamonté Harper, known professionally as Saweetie, is an American rapper and songwriter from Hayward, California. After the success of her debut single, "Icy Grl", she was signed to Warner Bros. Records.</div>
+<p>
+<a href="https://soundcloud.com/saweetie"> Give her a listen</a>
+<a href="https://twitter.com/Saweetie?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Her twitter</a>:
+<a href="https://www.instagram.com/saweetie/?hl=en"> Her instagram</a> </p>
+<img src="saweetie.jpg">
+
+<div> <em>BROCKHAMPTON</em> is an American musical group formed in San Marcos, Texas, in 2015 and currently based in California. Led by Kevin Abstract, Brockhampton formed partially through the online forum "KanyeToThe", and describe themselves as a boy band.</div>
+<p>
+<a href="https://brckhmptn.com/"> Their website!</a>
+<a href="https://twitter.com/brckhmptn"> Visit their twiiter</a>
+<a href="https://www.youtube.com/channel/UCFLnwFhuJeBSCjIJewxSqKw"> Watch their videos </a> </p>
+<img src="brockhampton.jpg">
+
+<div> <em>Denzel Curry </em> is an American rapper and songwriter. He released his debut full-length album, titled Nostalgic 64, on September 3, 2013. His second full-length album, titled Imperial, was released on March 9, 2016. </div>
+<p>
+<a href="https://soundcloud.com/denzelcurryph"> Listen to his music</a>
+<a href="http://www.ultimatedenzelcurry.com/"> His website</a>
+<a href="https://twitter.com/denzelcurry?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter</a> </p>
+<img src="denzel'.jpg">
+
+<div class="btn-group">
+  <a href="nocap.html#rapsection"><button>Rap</button></a>
+  <a href="nocap.html#indie"><button>Indie</button></a>
+  <a href="nocap.html#alternativesection"><button>Alternative</button></a>
+  <a href="nocap.html#popsection"><button>Pop</button></a>
+  <a href="nocap.html#randbsection"><button>R&B</button></a>
+  <a href="nocap.html#internationalsection"><button>International</button></a>
+</div>
+
+<h1 id="indie"> Indie </h1>
+
+
+
+<div> <em>AJR</em> is an American indie pop band composed of multi-instrumentalist brothers Adam, Jack and Ryan Met. The band is a DIY pop group who write, produce and mix their own material in the living room of their Chelsea apartment.</div>
+<p>
+<a href="https://www.instagram.com/ajrbrothers/?hl=en"> Their instagram</a>
+<a href="https://twitter.com/AJRBrothers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Their twitter</a>
+<a href="http://ajrbrothers.com/"> Visit their website</a> </p>
+<img src="https://marquettewire.org/wp-content/uploads/2017/10/20841937_10154671630196583_9077107098777978133_n.jpg">
+
+<div> <em>Wet</em> is an American indie pop group from Brooklyn, New York. The band's first two albums—the 2013 self-titled EP and 2016 Don't You—are credited to Kelly Zutrau, Joe Valle, and Marty Sulkow.</div>
+<a href="https://en.wikipedia.org/wiki/Wet_"> Learn about them </a>
+<a href="https://twitter.com/wet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Their twitter</a>
+<a href="https://open.spotify.com/artist/2i9uaNzfUtuApAjEf1omV8"> Listen to their music</a> </p>
+<img src="https://www.newyorker.com/wp-content/uploads/2016/02/160201_r27610-1028.jpg">
+
+<div> <em>Boy Pablo</em> is a Norwegian indie-poprock act led by Nicolas Pablo Muñoz, a singer-songwriter from Bergen, Norway.</div>
+<p>
+<a href="https://soundcloud.com/boy-pablo777"> Give them a listen</a>
+<a href="https://twitter.com/soypablo777?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Their twitter</a>:
+<a href="https://www.instagram.com/soypablo777/?hl=en"> Their instagram</a> </p>
+<img src="https://d3c1jucybpy4ua.cloudfront.net/data/58200/big_picture/24129541_1308297492607769_7650234607032865078_n.jpg?1522068280">
+
+<div> <em>Clairo</em> Claire Cottrill, better known by her stage name Clairo, is an electropop recording artist from Carlisle, Massachusetts.</div>
+<p>
+<a href="https://twitter.com/clairo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Her twitter</a>
+<a href="https://www.instagram.com/clairo/?hl=en"> Visit her instagram</a>
+<a href="https://www.clairo.com/"> Her website </a> </p>
+<img src="https://3m84r11gpx1j11puas2g5wfl-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/clairo.jpg">
+
+<div> <em>Calpurnia </em> is a Canadian indie-rock band formed in 2017. The band consists of Finn Wolfhard (the star of Stranger Things), Malcolm Craig, Ayla Tesler-Mabe and Jack Anderson. The band released their debut single "City Boy" on 7 March 2018. </div>
+<p>
+<a href="https://open.spotify.com/artist/5A2yiLLhc0NJaG8rn4mYp5"> Listen to their music</a>
+<a href="https://www.calpurniatheband.com/"> Their website</a>
+<a href="https://www.instagram.com/calpurniaofficial/?hl=en"> Their instagram</a> </p>
+<img src="http://dazedimg.dazedgroup.netdna-cdn.com/900/azure/dazed-prod/1230/8/1238848.jpg">
+
+<div class="btn-group">
+  <a href="nocap.html#rapsection"><button>Rap</button></a>
+  <a href="nocap.html#indie"><button>Indie</button></a>
+  <a href="nocap.html#alternativesection"><button>Alternative</button></a>
+  <a href="nocap.html#popsection"><button>Pop</button></a>
+  <a href="nocap.html#randbsection"><button>R&B</button></a>
+  <a href="nocap.html#internationalsection"><button>International</button></a>
+</div>
+
+<h1 id="alternativesection"> Alternative </h1>
+
+
+<div> <em>Alice Merton</em> is a German-Canadian-English singer and songwriter. Merton achieved mainstream success with her debut single, "No Roots", a number one single in France. In March 2018, the single was released in the UK, joining BBC Radio 2's playlist. </div>
+<p>
+<a href="https://www.instagram.com/alicemerton/"> Her instagram</a>
+<a href="https://twitter.com/alicemerton?lang=en"> Her twitter</a>
+<a href="https://www.alicemerton.com/"> Visit their website</a></p>
+<img src="https://s3.amazonaws.com/s3.radio.radio.com/styles/delta__775x515/s3/AliceMerton2%2520Adam%2520Hagy-USA%2520TODAY%2520Sports.jpg?itok=vLKZh2R7">
+
+<div> <em>Turnover</em> an American rock band from Virginia Beach, Virginia. Formed in 2009, the band is signed with the Run for Cover Records label. Turnover has released three albums, two EPs and a handful of singles.</div>
+<a href="http://www.turnovermusic.net/"> Visit their website</a>
+<a href="https://twitter.com/turnoverva?lang=en"> Their twitter</a>
+<a href="https://turnover.bandcamp.com/"> Listen to their music</a></p>
+<img src="https://www.filepicker.io/api/file/5mX3VXJNS9SPHrYgvWoS/convert?cache=true&crop=0%2C30%2C1300%2C650">
+
+<div> <em>Bad Suns</em> is an American rock band that formed in 2012, which consists of Christo Bowman, Gavin Bennett, Miles Morris and Ray Libby. A majority of the band members are from Los Angeles, California.</div>
+<p>
+<a href="https://soundcloud.com/badsuns"> Give them a listen</a>
+<a href="https://twitter.com/badsuns"> Their twitter</a>:
+<a href="https://www.instagram.com/badsuns/?hl=en"> Their instagram</a> </p>
+<img src="https://yt3.ggpht.com/a-/ACSszfG0Nhe29U51bwpoW0y9gbQAJkgy7BUUvtbhzg=s900-mo-c-c0xffffffff-rj-k-no">
+
+<div> <em>Amber Run </em> is a British indie rock band from Nottingham, UK composed of Joshua Keogh, Tom Sperring, and Henry Wyeth. The band have released two albums and four EPs.</div>
+<p>
+<a href="https://open.spotify.com/artist/0MmnmsAuQKRFpo6vJElcaU"> Listen to their music!</a>
+<a href="https://www.instagram.com/amberrun/?hl=en"> Visit their instagram</a>
+<a href="https://www.amber-run.com/"> Their website </a></p>
+<img src="https://media.ticketmaster.co.uk/tm/en-gb/dam/a/5ab/fa4ed871-7854-4df5-8d94-a6dfdf0195ab_350541_CUSTOM.jpg">
+
+<div> <em>H.E.R. </em> is an American singer from Vallejo, California. She signed to RCA Records and has released two extended plays under the label: H.E.R. Volume 1 and H.E.R. Volume 2.  </div>
+<p>
+<a href="https://open.spotify.com/album/0pV0Mx07aMApIpF19oSQgY"> Listen to her music</a>
+<a href="http://www.her-official.com/"> Her website</a>
+<a href="https://www.instagram.com/hermusicofficial/?hl=en"> Her instagram</a></p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/H.E.R._2017.jpg/220px-H.E.R._2017.jpg">
+
+<div class="btn-group">
+  <a href="nocap.html#rapsection"><button>Rap</button></a>
+  <a href="nocap.html#indie"><button>Indie</button></a>
+  <a href="nocap.html#alternativesection"><button>Alternative</button></a>
+  <a href="nocap.html#popsection"><button>Pop</button></a>
+  <a href="nocap.html#randbsection"><button>R&B</button></a>
+  <a href="nocap.html#internationalsection"><button>International</button></a>
+</div>
+
+<h1 id="popsection"> Pop </h1>
+
+
+
+<div> <em>PRETTYMUCH</em> is an American-Canadian pop boy band based in Los Angeles, California. The group consists of Brandon Arreaga, Edwin Honoret, Austin Porter, Nick Mara and Zion Kuwonu.</div>
+<p>
+<a href="https://www.instagram.com/prettymuch/?hl=en"> Their instagram</a>
+<a href="https://twitter.com/PRETTYMUCH?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Their twitter</a>
+<a href="https://open.spotify.com/artist/5Y8eJDj37KhaEeqbVO7Ag1"> Listen to their music</a> </p>
+<img src="https://www.interviewmagazine.com/wp-content/uploads/2018/02/slack-imgs.jpg">
+
+<div> <em>Why Don't We</em> is an American pop boyband, that was assembled on September 27, 2016, consisting of Jonah Marais Roth Frantzich, Corbyn Matthew Besson, Daniel James Seavey, Jack Robert Avery, and Zachary Dean Herron.</div>
+<a href="https://www.instagram.com/whydontwemusic/?hl=en"> Visit their instagram</a>
+<a href="https://twitter.com/whydontwemusic"> Their twitter</a>
+<a href="https://open.spotify.com/artist/2jnIB6XdLvnJUeNTy5A0J2"> Listen to their music</a> </p>
+<img src="http://www.popstaronline.com/wp-content/uploads/2016/10/CuG0QXAUMAAQmUC.jpg">
+
+<div> <em>Troye Sivan</em> Troye Sivan Mellet is a South African-born Australian singer, songwriter, actor, and YouTube personality.</div>
+<p>
+<a href="https://www.troyesivan.com/"> His website</a>
+<a href="https://twitter.com/troyesivan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter</a>:
+<a href="https://open.spotify.com/artist/3WGpXCj9YhhfX11TToZcXP"> Listen to him</a> </p>
+<img src="https://www.out.com/sites/out.com/files/2016/09/06/09_troye.jpg">
+
+<div> <em>The Vamps </em> are a British pop rock band consisting of Brad Simpson, James McVey, Connor Ball and Tristan Evans.</div>
+<p>
+<a href="https://www.youtube.com/channel/UCtGdOn3XSNWVK54P13jDoCg"> Listen to their music!</a>
+<a href="https://twitter.com/TheVampsband?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Visit their twitter</a>
+<a href="https://www.instagram.com/thevamps/?hl=en"> Visit their instagram </a> </p>
+<img src="http://notionmagazine.com/wp-content/uploads/2016/10/TU5A3313-Copy-1.jpg">
+
+<div> <em>John Mayer </em> is an American singer-songwriter, guitarist, and producer. Born in Bridgeport, Connecticut, Mayer attended Berklee College of Music in Boston, but disenrolled and moved to Atlanta in 1997 with Clay Cook.  </div>
+<p>
+<a href="https://www.youtube.com/channel/UCi1mYtUWs0JRkPl6bNVRL_Q"> Listen to his music</a>
+<a href="https://johnmayer.com/"> His website</a>
+<a href="https://www.instagram.com/johnmayer/?hl=en"> His instagram</a></p>
+<img src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-img.instyle.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F640x768%2Fpublic%2Fimages%2F2017%2F12%2F120517-john-mayer-hospitalized.jpg%3Fitok%3DsI1WUrXz&w=400&q=85">
+
+<div class="btn-group">
+  <a href="nocap.html#rapsection"><button>Rap</button></a>
+  <a href="nocap.html#indie"><button>Indie</button></a>
+  <a href="nocap.html#alternativesection"><button>Alternative</button></a>
+  <a href="nocap.html#popsection"><button>Pop</button></a>
+  <a href="nocap.html#randbsection"><button>R&B</button></a>
+  <a href="nocap.html#internationalsection"><button>International</button></a>
+</div>
+
+<h1 id="randbsection"> R&B </h1>
+
+</div>
+
+<div> <em>Daniel Caesar</em> Ashton Simmonds, better known by his stage name Daniel Caesar, is a Canadian, Grammy-nominated R&B and soul singer-songwriter.</div>
+<p>
+<a href="https://www.instagram.com/danielcaesar/?hl=en"> His instagram</a>
+<a href="https://twitter.com/danielcaesar?lang=en"> His twitter</a>
+<a href="https://open.spotify.com/artist/20wkVLutqVOYrc0kxFs7rA"> Listen to his music</a></p>
+<img src="https://i.pinimg.com/originals/24/04/6d/24046db30f4015b8aadfb20c611ebfc0.jpg">
+
+<div> <em>Kali Uchis</em> is a Colombian-American singer and songwriter. She debuted in the music industry with her 2012 mixtape, Drunken Babble, which was described as "genre-defying".</div>
+<a href="https://www.instagram.com/whydontwemusic/?hl=en"> Visit their instagram</a>
+<a href="https://twitter.com/KALIUCHIS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Her twitter</a>
+<a href="https://open.spotify.com/artist/1U1el3k54VvEUzo3ybLPlM"> Listen to her music</a></p>
+<img src="https://pbs.twimg.com/media/DaEn7HfVwAAiuGz.jpg">
+
+<div> <em>Khalid</em> is an American singer and songwriter. He is signed to Right Hand Music Group and RCA Records..</div>
+<p>
+<a href="https://www.instagram.com/kaliuchis/?hl=en"> His instagram</a>
+<a href="https://twitter.com/thegreatkhalid?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter</a>:
+<a href="https://soundcloud.com/thegreatkhalid"> Listen to him</a></p>
+<img src="https://www.thefamouspeople.com/profiles/images/khalid-singer-1.jpg">
+
+<div> <em>Ella Mai </em> is an English singer and songwriter from London, England. She is signed to DJ Mustard's label 10 Summers Records where she released three extended plays.</div>
+<p>
+<a href="https://open.spotify.com/artist/7HkdQ0gt53LP4zmHsL0nap"> Listen to her music!</a>
+<a href="https://twitter.com/ellamai?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Visit her twitter</a>
+<a href="https://www.instagram.com/ellamai/?hl=en"> Visit her instagram </a></p>
+<img src="https://nylon-img.imgix.net/featured_images/attachments/000/031/772/original/Ella_Mai.jpg?auto=format&ch=Width%2CDPR&q=75&w=640&ixlib=js-1.1.1&cs=strip&crop=&s=3d810941659edf012458026fd499196e">
+
+<div> <em>Teyana Taylor </em> is an American recording artist, actress, dancer, and model from Harlem. In 2007, Taylor signed a record deal with American musician Pharrell Williams' Star Trak Entertainment imprint, before making her first national appearance on MTV's My Super Sweet 16.  </div>
+<p>
+<a href="https://open.spotify.com/artist/4ULO7IGI3M2bo0Ap7B9h8a"> Listen to her music</a>
+<a href="https://twitter.com/TEYANATAYLOR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Her twitter</a>
+<a href="https://www.instagram.com/teyanataylor/?hl=en"> Her instagram</a> </p>
+<img src="http://www.hawtcelebs.com/wp-content/uploads/2017/08/teyana-taylor-at-2017-mtv-video-music-awards-in-los-angeles-08-27-2017_1.jpg">
+
+<div class="btn-group">
+  <a href="nocap.html#rapsection"><button>Rap</button></a>
+  <a href="nocap.html#indie"><button>Indie</button></a>
+  <a href="nocap.html#alternativesection"><button>Alternative</button></a>
+  <a href="nocap.html#popsection"><button>Pop</button></a>
+  <a href="nocap.html#randbsection"><button>R&B</button></a>
+  <a href="nocap.html#internationalsection"><button>International</button></a>
+</div>
+
+<h1 id="internationalsection"> International </h1>
+
+
+<div> <em>Momoland</em> is a South Korean girl group formed by MLD Entertainment. through the 2016 reality show Finding Momoland.</div>
+<p>
+<a href="https://kprofiles.com/momoland-members-profile/"> Member profiles</a>
+<a href="https://www.instagram.com/momoland_official/?hl=en"> Their instagram</a>
+<a href="https://open.spotify.com/artist/5RR0MLwcjc87wjSw2JYdwx"> Listen to their music</a> </p>
+<img src="https://0.soompi.io/wp-content/uploads/2018/01/24235017/MOMOLAND.jpg">
+
+<div> <em>DEAN</em> Kwon Hyuk, better known by his stage name Dean, is a South Korean alternative R&B singer-songwriter, rapper and record producer.</div>
+<a href="https://www.instagram.com/deantrbl/?hl=en"> Visit his instagram</a>
+<a href="https://kprofiles.com/dean-profile/"> Learn about him personally</a>
+<a href="https://open.spotify.com/artist/1U1el3k54VvEUzo3ybLPlM"> Listen to his music</a> </p>
+<img src="http://goodmomusic.net/wp-content/uploads/2017/02/DEAN.jpg">
+
+<div> <em>CLC</em> is a South Korean girl group formed by Cube Entertainment in 2015. The group consists of seven members: Seunghee, Yujin, Seungyeon, Sorn, Yeeun, Elkie, and Eunbin. Their debut mini album First Love was released on March 19, 2015.</div>
+<p>
+<a href="https://kprofiles.com/clc-members-profile/"> Learn about the members </a>
+<a href="https://twitter.com/cubeclc?lang=en"> Their twitter</a>
+<a href="https://open.spotify.com/artist/6QyO41KctzGc70mVaVnXQO"> Listen to them</a></p>
+<img width="400"<img src="https://kprofiles.com/wp-content/uploads/2017/01/CLC.jpg">
+
+<div> <em>Pentagon </em> is a South Korean boy band formed by Cube Entertainment in 2016. The group consists of ten members: Jinho, Hui, Hongseok, E'Dawn, Shinwon, Yeo One, Yan An, Yuto, Kino and Wooseok.</div>
+<p>
+<a href="https://open.spotify.com/artist/1wKpMkucynaTfG8lyPprYV"> Listen to their music!</a>
+<a href="https://kprofiles.com/pentagon-members-profile/"> Learn about the members</a>
+<a href="https://www.instagram.com/cube_ptg/?hl=en"> Visit their instagram </a> </p>
+<img src="https://www.allkpop.com/upload/2018/01/af_org/23235733/pentagon.jpg">
+
+<div> <em>Sik-k </em> Kwon Min-sik, better known by his stage name Sik-K, is a South Korean rapper. He was a contestant on Show Me the Money 4. He released his first EP, Flip, on July 20, 2016 </div>
+<p>
+<a href="https://open.spotify.com/artist/5DIi2JWfQPTKffaVBlIYRn"> Listen to his music</a>
+<a href="https://twitter.com/younghotyellow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter</a>
+<a href="https://www.instagram.com/younghotyellow94/?hl=en"> His instagram</a> </p>
+<img src="https://kprofiles.com/wp-content/uploads/2018/07/sik-k-feature.jpg">
+
+</body>
+
+</html>

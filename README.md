@@ -1,1 +1,1 @@
-# music-galore.github.io
+# musicgalore

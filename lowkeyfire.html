@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=""></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="head2.js"></script>
+
+
+<div class="scrollmenu">
+<a href="index.html">Home</a>
+<a href="cltculture.html">CLT Culture</a>
+<a href="lowkey.html">LOWKEY</a>
+<a href="lowkeyfire.html">FOR REAL</a>
+<a href="nocap.html">NO CAP</a>
+</div>
+
+
+
+<h1 id="MUSIC GALORE">
+
+
+  <h3>WELOME TO FOR REAL FIRE 🔥</h3>
+</h1>
+</head>
+<body>
+
+<p> 🔥YO WASSUP AND WELCOME TO <a href="https://www.billboard.com/">FOR REAL FIRE🔥</a></p>
+    <p> THIS IS MUSIC THAT IS COMMONLY KNOWN</P>
+
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <title>HTML5 Audio Player</title>
+         <style>
+             #playlist{
+                 list-style: none;
+             }
+             #playlist li a{
+                 color:black;
+                 text-decoration: none;
+             }
+             #playlist .current-song a{
+                 color:blue;
+             }
+         </style>
+         <script>
+         function audioPlayer(){
+                 var currentSong = 0;
+                 $("#audioPlayer")[0].src = $("#playlist li a")[0];
+                 $("#audioPlayer")[0].play();
+                 $("#playlist li a").click(function(e){
+                    e.preventDefault();
+                    $("#audioPlayer")[0].src = this;
+                    $("#audioPlayer")[0].play();
+                    $("#playlist li").removeClass("current-song");
+                     currentSong = $(this).parent().index();
+                     $(this).parent().addClass("current-song");
+                 });
+
+                 $("#audioPlayer")[0].addEventListener("ended", function(){
+                    currentSong++;
+                     if(currentSong == $("#playlist li a").length)
+                         currentSong = 0;
+                     $("#playlist li").removeClass("current-song");
+                     $("#playlist li:eq("+currentSong+")").addClass("current-song");
+                     $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+                     $("#audioPlayer")[0].play();
+                 });
+             }
+         </script>
+         <!-- Source Code From YouTube.com/MicroTechTutorials  you may remove this message on your webpage but please do not redistribtue -->
+     </head>
+     <body>
+         <audio src="" controls id="audioPlayer">
+             Sorry, your browser doesn't support html5!
+         </audio>
+        <ul id="playlist">
+             <li class="current-song"><a href="tokyoo.mp3">Tokyo by Brockhampton</a></li>
+             <li><a href="song1.mp3">1997 Diana by Brockhampton</a></li>
+             <li><a href="song2.mp3">10,000 Hours by PrettyMuch</a></li>
+             <li><a href="eden.mp3">Nowhere Else by Eden</a></li>
+             <li><a href="sunflower.mp3">Sunflower by Rex Orange County</a></li>
+             <li><a href="moron.mp3">Moron by Steve Lacy</a></li>
+             <li><a href="sweetlife.mp3">Sweet Life by Jooyoung</a></li>
+             <li><a href="shotforme.mp3">Shot for me by Drake </a></li>
+             <li><a href="childsplay.mp3">Child's Play by SZA </a></li>
+             <li><a href="dancedance.mp3">Dance, Dance by Fall Out Boy</a></li>
+             <li><a href="mutual.mp3">Mutual by Shawn Mendes</a></li>
+             <li><a href="move.mp3">Move by Saint Motel</a></li>
+             <li><a href="drive.mp3">Drive by Jay Park</a></li>
+             <li><a href="blactivist.mp3">Blacktivist by Flatbush Zombies</a></li>
+             <li><a href="focus.mp3">Focus by H.E.R</a></li>
+             <li><a href="party.mp3">Party(shut down) by Sik-k</a></li>
+
+         </ul>
+         <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+         <!-- <script src="audioPlayer.js"></script> -->
+         <script>
+             // loads the audio player
+             audioPlayer();
+         </script>
+
+
+</div>
+
+<div class="btn-group">
+  <a href="lowkeyfire.html#rap3section"><button>Rap</button></a>
+  <a href="lowkeyfire.html#indie3section"><button>Indie</button></a>
+  <a href="lowkeyfire.html#alternative3section"><button>Alternative</button></a>
+  <a href="lowkeyfire.html#pop3section"><button>Pop</button></a>
+  <a href="lowkeyfire.html#randb3section"><button>R&B</button></a>
+  <a href="lowkeyfire.html#international3section"><button>International</button></a>
+</div>
+
+<h3 id="rap3section">RAP 🎤</h3>
+
+<h2> 1.DRAKE </h2>
+<p>TV and rap star Drake is best known in Canada for playing wheelchair-bound Jimmy Brooks on 'Degrassi: The Next Generation,' and for hit songs like 'Take Care,' 'One Dance' and 'Hotline Bling and In My Feeling, Drake has worked with so many other artist.</p>
+<img width="400" <img src="http://images.mid-day.com/images/2017/feb/16Drake-1.jpg">
+
+
+<h2> 2. TYGA </h2>
+<p>Tyga is an American rapper best known for being signed by Lil Wayne's Young Money Entertainment and having dated reality star Kylie Jenner, Also has a child with star Blac Chyna. Tyga has hit songs like rack city, Ayo Featuring Chris Brown and many more.</p>
+<img width="400" <img src="http://www.galuxsee.com/wp-content/uploads/2017/04/Kyoto-20170516-Tyga-Instagram-Map.jpg">
+
+<h2> 3. KENDRICK LAMAR </h2>
+<p>Kendrick Lamar is an award-winning rapper and songwriter best known for his innovative take on life in Southern California as well as for his affiliation with rap star and super-producer Dr. Dre. Lamar is the first rapper to win a pulitzer award.</p>
+<img width="400" <img src="https://format-com-cld-res.cloudinary.com/image/private/s--C7b5PyN9--/c_limit,g_center,h_65535,w_1600/a_auto,fl_keep_iptc.progressive,q_95/v1/8b43c4b84710a926b792c054705c91cb/IMG_2578.jpg">
+
+<h2> 4. CARDI B </h2>
+<p>Cardi B is a Grammy-nominated American rapper, social media personality and former reality star whose commercial debut single "Bodak Yellow" surged to the top of the music charts in 2017.</p>
+
+<img width="400" src="https://media.gq.com/photos/5ac50c1471ef6514cccc2a48/master/pass/Cardi-B%E2%80%99s-Money-Moves-GQ-May-040918-03.jpg">
+
+<h2>5. REMY MA </h2>
+<p>Grammy nominated artist with the rap group Terror Squad who was sentenced to eight years behind bars in 2007 for shooting a friend. She is one of only five female rappers to have a song top the Billboard Hot 100 chart. She joined the cast of Love & Hip Hop: New York season 6.</p>
+<img width="400" <img src="https://heavyeditorial.files.wordpress.com/2015/12/remy-ma-4.jpg?quality=65&strip=all&w=780">
+
+<div class="btn-group">
+  <a href="lowkeyfire.html#rapsection"><button>Rap</button></a>
+  <a href="lowkeyfire.html#indie"><button>Indie</button></a>
+  <a href="lowkeyfire.html#alternativesection"><button>Alternative</button></a>
+  <a href="lowkeyfire.html#popsection"><button>Pop</button></a>
+  <a href="lowkeyfire.html#randbsection"><button>R&B</button></a>
+  <a href="lowkeyfire.html#internationalsection"><button>International</button></a>
+</div>
+
+<h3 id="randb3section">R&B🎶</h3>
+
+<h2>1. MIGUEL </h2>
+<p>Miguel is an American R&B singer best known for his 2012 album Kaleidoscope Dream and the single "Adorn," for which he won a Grammy Award.</p>
+<img width="400" <img src="https://i.pinimg.com/originals/57/22/90/57229051d31b1a714aed1ad032b6c5c6.jpg">
+<h2>2. KEHLANI</h2>
+<p>Kehlani Ashley Parrish (born April 24, 1995), commonly known as Kehlani, is an American singer, songwriter and dancer, signed to Atlantic Records. Kehlani is originally from Oakland, California, where she achieved initial fame as a member of the teen group Poplyfe.</p>
+<img width="400" <img src="https://c1.staticflickr.com/5/4666/28104833569_7b4daff5f1_b.jpg">
+<h2>3. SZA</h2>
+<p>Solána Imani Rowe (born November 8, 1990),known professionally as SZA  is an American singer and songwriter. SZA was born in Saint Louis, Missouri, later relocating to Maplewood, New Jersey.[In October 2012, SZA self-released her debut EP, See.SZA.Run, which she then followed up with her second EP, titled S, in April 2013. In July 2013, it was revealed that she had signed to the hip hop record label Top Dawg Entertainment, through which she released Z, her third EP and first retail release, in April 2014.</p>
+<img width="400" <img src="https://i.guim.co.uk/img/media/b277dae9dbfa74ad176528667787c8273c40c1c9/0_0_6720_4032/master/6720.jpg?w=700&q=55&auto=format&usm=12&fit=max&s=6ee6af20b7b939c16dc1824ead3cfb25">
+<h2>4.CHRIS BROWN</h2>
+<p>Born Christopher Maurice Brown, his debut self-titled album went double-Platinum and his single "Run It!" reached #1 on the U.S. charts in 200</p>
+<img width="400" <img src="https://loopnewslive.blob.core.windows.net/liveimage/sites/default/files/2018-01/AGq4Cx9PXJ.jpg">
+<h2>5. JHENE AIKO</h2>
+<p>Jhené Aiko Efuru Chilombo (born March 16, 1988) is an American singer and songwriter. She embarked on her music career contributing vocals and appearing in several music videos for R&B group B2K. ... It was used as a marketing tool, suggested by Sony and Epic Records, to promote Aiko through B2K and attract an audience</p>
+<img width="400" <img src="https://typeset-beta.imgix.net/elite-daily/2017/05/08130818/jhene-aiko-big-sean.jpg">
+
+<div class="btn-group">
+  <a href="lowkeyfire.html#rap3section"><button>Rap</button></a>
+  <a href="lowkeyfire.html#indie3section"><button>Indie</button></a>
+  <a href="lowkeyfire.html#alternative3section"><button>Alternative</button></a>
+  <a href="lowkeyfire.html#pop3section"><button>Pop</button></a>
+  <a href="lowkeyfire.html#randb3section"><button>R&B</button></a>
+  <a href="lowkeyfire.html#international3section"><button>International</button></a>
+</div>
+
+<h3 id="alternative3section"> ALTERNATIVE 🎸</h3>
+
+<h2>1.Panic! At the Disco</h2>
+<p>Pop-punk band that met in high school and found acclaim with the 2005 track "I Write Sins Not Tragedies." They won Video of the Year at the 2006 MTV Music Video Awards for the song.</p>
+<img width="400" <img src="https://reeldealbsu.files.wordpress.com/2018/03/panic-at-the-disco-oct-2015.jpg?w=1500&h=768&crop=1">
+<h2>2. FALL OUT BOY</h2>
+<p>Band that's roots lie in the hardcore punk scene of Chicago. Their 2005 album From Under the Cork Tree went double platinum and helped them breakthrough into the mainstream.</p>
+<img width="400" <img src="https://livekindlyproduction-8u6efaq1lwo6x9a.stackpathdns.com/wp-content/uploads/2018/05/fall-out-boy.jpg">
+<h2>3. PIERCE THE VEIL</h2>
+<p>Pierce the Veil is an American rock band from San Diego, California. Formed in 2006, the group was founded by brothers Vic and Mike Fuentes after the disbandment of the group Before Today (formerly Early Times), which was formed out of the San Diego punk rock scene.</p>
+<img width="400" <img src="https://i.ytimg.com/vi/ltqXGUHwX6I/maxresdefault.jpg">
+<h2>4. IMAGINE DRAGONS</h2>
+<p>Imagine Dragons is an American rock band from Las Vegas, Nevada, consisting of lead vocalist Dan Reynolds, lead guitarist Wayne Sermon, bassist Ben McKee, and drummer Daniel Platzman</p>
+<img width="400" <img src="https://www.reviewjournal.com/wp-content/uploads/2017/09/9258551_web1_imagine-dragons_crop.jpg">
+<h2>5. TWENTY ØNE PILØTS </h2>
+<p>Twenty One Pilots is an American musical duo originating from Columbus, Ohio. The band was formed in 2009 by lead vocalist Tyler Joseph along with former members Nick Thomas and Chris Salih, who left</p>
+<img width="400"<img src="https://media1.popsugar-assets.com/files/thumbor/WRfcZH8PehC9BKjfo-GDcSbds5A/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/02/12/122/n/1922398/11609c4e58a11225b7e136.20529987_edit_img_image_43159434_1486950692/i/Why-Did-Twenty-One-Pilots-Take-Off-Pants-Grammys.jpg">
+
+
+<div class="btn-group">
+  <a href="lowkeyfire.html#rap3section"><button>Rap</button></a>
+  <a href="lowkeyfire.html#indie3section"><button>Indie</button></a>
+  <a href="lowkeyfire.html#alternative3section"><button>Alternative</button></a>
+  <a href="lowkeyfire.html#pop3section"><button>Pop</button></a>
+  <a href="lowkeyfire.html#randb3section"><button>R&B</button></a>
+  <a href="lowkeyfire.html#international3section"><button>International</button></a>
+</div>
+
+<h3 id="pop3section">POP🎧</h3>
+
+<h2> 1.SHAWN MENDES </h2>
+<p>Shawn Peter Raul Mendes is a Canadian singer and songwriter. He gained a following in 2013, posting song covers on the video-sharing application Vine.</p>
+<img width="400" <img src="https://assets.wonderlandmagazine.com/uploads/2018/06/180416_SCALA_SHAWN_MENDES_05_164.jpg">
+<h2> 2.CAMILA CABELLO</h2>
+<p>Karla Camila Cabello Estrabao is a Cuban-American singer and songwriter. She rose to prominence as a member of the girl group Fifth Harmony, which was formed on the second season of the American edition</p>
+<img width="400" <img src="https://i.pinimg.com/736x/13/4a/cc/134acce4b08fdbb844a878e63d574128--celebrity-pictures-female-celebrities.jpg">
+<h2>  3. SELENA GOMEZ </h2>
+<p>Selena Marie Gomez is an American singer, actress, and producer. After appearing on the children's television series Barney & Friends, she received wider recognition for her portrayal of Alex Russo.</p>
+<img width="400" <img src="https://media.glamour.com/photos/59fe0c0ad9e2877106fb0b71/master/pass/selena-gomez.jpg">
+<h2>4.HAILEE STEINFELD</h2>
+<p>Hailee Steinfeld is an American actress and singer. She made her breakthrough as Mattie Ross in True Grit, for which she was nominated for numerous accolades, including the Academy Award for Best Supporting Actress</p>
+<img width="400" <img src="http://cache.umusic.com/_sites/_halo/haileesteinfeld/images/og.jpg">
+<h2>5. NICK JONAS</h2>
+<p>Nicholas Jerry Jonas is an American singer, songwriter, actor, and record producer. Jonas began acting in theater at the age of seven, and released his debut single in 2002</p>
+<img width="400" <img src="http://www.farandula.com/wp-content/uploads/2015/01/rs_634x847-150122074248-634.Nick-Jonas-GQ.jl_.012215.jpg">
+
+<div class="btn-group">
+  <a href="lowkeyfire.html#rap3section"><button>Rap</button></a>
+  <a href="lowkeyfire.html#indie3section"><button>Indie</button></a>
+  <a href="lowkeyfire.html#alternative3section"><button>Alternative</button></a>
+  <a href="lowkeyfire.html#pop3section"><button>Pop</button></a>
+  <a href="lowkeyfire.html#randb3section"><button>R&B</button></a>
+  <a href="lowkeyfire.html#international3section"><button>International</button></a>
+</div>
+
+
+<h3 id="indie3section">INDIE 👩‍🎤</h3>
+
+<h2>1. SAINT MOTEL</h2>
+<p>Saint Motel is an American pop band from Los Angeles, whose music has been described as everything from "dream pop" to "indie prog." The band consists of A/J Jackson, Aaron Sharp, Dak Lerdamornpong, and Greg Erwin.</p>
+<img width="400" <img src="http://www.saintmotel.com/sites/g/files/g2000006026/f/styles/photos-thumbnail1/public/201608/SaintMotel_Spotify.jpg.jpeg?itok=yZNrBZtq">
+<h2>2. COIN</h2>
+<p>Coin (often stylized COIN) is an American pop band formed in 2012 at Nashville, Tennessee. It currently consists of Chase Lawrence (lead vocals, synthesizers), Ryan Winnen (drums), Joe Memmel (lead guitar, backing vocals) and Zachary Dyke (bass guitar).</p>
+<img width="400" <img src="http://neomusicscene.com/wp-content/uploads/2018/02/coin-tickets_03-18-18_17_59b2d5d6da2cc.jpg">
+<h2>3. BEACH HOUSE</h2>
+<p>Beach House is an American dream pop band from Baltimore, Maryland, formed in 2004. The band consists of vocalist and keyboardist Victoria Legrand and guitarist, keyboardist, and backup vocalist Alex Scally.</p>
+<img width="400" <img src="https://beardedgentlemenmusic.com/wp-content/uploads/2015/10/Beach-House-guitars.jpg">
+</h2>4. CIGARETTES AFTER SEX</h2>
+<p>Cigarettes After Sex is an American ambient pop band from El Paso, Texas, formed in 2008 by Greg Gonzalez. The band's debut EP, I., was released in 2012 with the singles "Affection" and "K." following in 2015 and 2016, respectively.</p>
+<img width="400" <img src="https://ichef.bbci.co.uk/images/ic/976x549/p0551xnf.jpg">
+<h2>5. BLEACHERS</h2>
+<p>Bleachers is an American indie pop act based in New York City. It is the official stage name of songwriter and record producer Jack Antonoff, who is also part of the bands Steel Train and Fun</p>
+<img width="400" <img src="https://avaliveradio.files.wordpress.com/2014/07/20140716-094411-35051388.jpg">
+
+
+<div class="btn-group">
+  <a href="lowkeyfire.html#rap3section"><button>Rap</button></a>
+  <a href="lowkeyfire.html#indie3section"><button>Indie</button></a>
+  <a href="lowkeyfire.html#alternative3section"><button>Alternative</button></a>
+  <a href="lowkeyfire.html#pop3section"><button>Pop</button></a>
+  <a href="lowkeyfire.html#randb3section"><button>R&B</button></a>
+  <a href="lowkeyfire.html#international3section"><button>International</button></a>
+</div>
+
+<h3 id="international3section"> International✈️</h3>
+
+<h2>1.JAY PARK </h2>
+<p>Jay Park is a Korean-American singer, songwriter, rapper, dancer, record producer, model, choreographer, entrepreneur and actor.</p>
+<img width="400" <img src="https://cdn.cnn.com/cnnnext/dam/assets/170925032609-jay-park-7-exlarge-169.jpg">
+<h2>2.BIG BANG</h2>
+<p>Big Bang is a South Korean boy band formed by YG Entertainment. With members G-Dragon, T.O.P, Taeyang, Daesung, and Seungri, they are often cited as one of the most influential acts to shape the K-pop</p>
+<img width="400" <img src="https://0.soompi.io/wp-content/uploads/2017/02/09011027/BIGBANG-3.jpg">
+<h2>3.BTS</h2>
+<p>BTS, also known as the Bangtan Boys, is a seven-member South Korean boy band formed by Big Hit Entertainment. They debuted on June 12, 2013 with the song "No More Dream" from their first album 2 Cool 4 Skool.</p>
+<img width="400" <img src="https://0.soompi.io/wp-content/uploads/2018/06/13072652/bts21.jpg">
+<h2>4. GIRLS GENERATION</h2>
+<p>Girls' Generation, also known as SNSD, is a South Korean girl group formed by SM Entertainment. The group is composed of eight members: Taeyeon, Sunny, Tiffany, Hyoyeon, Yuri, Sooyoung, Yoona and Seohyun.</p>
+<img width="400" <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/LG_%EC%8B%9C%EB%84%A4%EB%A7%88_3D_TV_%EC%83%88_%EB%AA%A8%EB%8D%B8_%E2%80%98%EC%86%8C%EB%85%80%EC%8B%9C%EB%8C%80%E2%80%99_%EC%98%81%EC%9E%85.jpg">
+<h2>5.SHINee</h2>
+<p>Shinee is a South Korean boy band formed by SM Entertainment in 2008. The group is composed of four members: Onew, Key, Minho, and Taemin. Originally a five-piece group, vocalist Jonghyun died in December 2017.</p>
+<img width="400" <img src="https://0.soompi.io/wp-content/uploads/2018/02/17044223/SHINee.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id =""><a href=""> <img src="" border="0" alt="" /> </a></div>
+</div>
+
+</body>
+<html>

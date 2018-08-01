@@ -1,0 +1,361 @@
+<!Doctype html>
+<html>
+<link rel="stylesheet" type="text/css" href="head.css">
+  <script src="head2.js"></script>
+<body>
+
+  <div class="scrollmenu">
+  <a href="index.html">Home</a>
+  <a href="cltculture.html">CLT Culture</a>
+  <a href="lowkey.html">LOWKEY</a>
+  <a href="lowkeyfire.html">FOR REAL</a>
+  <a href="nocap.html">NO CAP</a>
+  </div>
+
+<h3> WELCOME TO LOWKEY 🤩 </h3>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Audio Player</title>
+    <style>
+        #playlist{
+            list-style: none;
+        }
+        #playlist li a{
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+    </style>
+    <script>
+    function audioPlayer(){
+            var currentSong = 0;
+            $("#audioPlayer")[0].src = $("#playlist li a")[0];
+            $("#audioPlayer")[0].play();
+            $("#playlist li a").click(function(e){
+               e.preventDefault();
+               $("#audioPlayer")[0].src = this;
+               $("#audioPlayer")[0].play();
+               $("#playlist li").removeClass("current-song");
+                currentSong = $(this).parent().index();
+                $(this).parent().addClass("current-song");
+            });
+
+            $("#audioPlayer")[0].addEventListener("ended", function(){
+               currentSong++;
+                if(currentSong == $("#playlist li a").length)
+                    currentSong = 0;
+                $("#playlist li").removeClass("current-song");
+                $("#playlist li:eq("+currentSong+")").addClass("current-song");
+                $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+                $("#audioPlayer")[0].play();
+            });
+        }
+    </script>
+    <!-- Source Code From YouTube.com/MicroTechTutorials  you may remove this message on your webpage but please do not redistribtue -->
+</head>
+<body>
+    <audio src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    </audio>
+    <ul id="playlist">
+        <li class="current-song"><a href="sunflower.mp3">Sunflower by Rex Orange County</a></li>
+        <li><a href="song1.mp3">1997 Diana by Brockhampton</a></li>
+        <li><a href="song2.mp3">10,000 Hours by PrettyMuch</a></li>
+        <li><a href="eden.mp3">Nowhere Else by Eden</a></li>
+        <li><a href="blacktivist.mp3">Blacktivist by Flatbush Zombies</a></li>
+        <li><a href="moron.mp3">Moron by Steve Lacy</a></li>
+        <li><a href="sweetlife.mp3">Sweet Life by Jooyoung</a></li>
+        <li><a href="shotforme.mp3">Shot for me by Drake </a></li>
+        <li><a href="childsplay.mp3">Child's Play by SZA </a></li>
+        <li><a href="dancedance.mp3">Dance, Dance by Fall Out Boy</a></li>
+        <li><a href="mutual.mp3">Mutual by Shawn Mendes</a></li>
+        <li><a href="move.mp3">Move by Saint Motel</a></li>
+        <li><a href="drive.mp3">Drive by Jay Park</a></li>
+        <li><a href="tokyoo.mp3">Tokyo by Brockhampton</a></li>
+        <li><a href="focus.mp3">Focus by H.E.R</a></li>
+        <li><a href="party.mp3">Party(shut down) by Sik-k</a></li>
+
+    </ul>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <!-- <script src="audioPlayer.js"></script> -->
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
+</body>
+</html>
+
+
+
+<div> This is the lowkey page with lowkey artists from all types of genres</div>
+
+<div class="btn-group">
+  <a href="lowkey.html#rap2section"><button>Rap</button></a>
+  <a href="lowkey.html#indie2section"><button>Indie</button></a>
+  <a href="lowkey.html#alternative2section"><button>Alternative</button></a>
+  <a href="lowkey.html#pop2section"><button>Pop</button></a>
+  <a href="lowkey.html#randb2section"><button>R&B</button></a>
+  <a href="lowkey.html#international2section"><button>International</button></a>
+</div>
+
+<h1 id="rap2section"> Rap </h1>
+<div> <em>Rico Nasty</em> is a female rapper. She started rapping while she was in high school. Her first mixtape, Summer's Eve, was releasd in her junior year of college.</div>
+<p>
+<a href="https://riconastymusic.com/"> Her website</a>
+<a href="https://twitter.com/rico_nastyy?lang=en"> Her twitter</a>
+<a href="https://www.instagram.com/riconasty/?hl=en"> Her instagram</a> </p>
+<img width="300"<img src="riconasty.jpg">
+
+<div> <em>Molly Brazy</em> is also a female rapper. She is from Detroit, and she started out by posting freestyles on her instagram</div>
+<a href="https://officialmollybrazy.com/"> Her website</a>
+<a href="https://twitter.com/mollybrazy?lang=en"> Her twitter</a>
+<a href="https://www.instagram.com/mollybrazy/?hl=en"> Her instgram</a> </p>
+<img width="300"<img src="mollybrazy.jpg">
+
+<div> <em>Earl Sweatshirt</em> is a male rapper. When he first came out as a rapper is name was not originally Earl Sweatshirt. It was Sly Tendencies. He first started rapping in the 8th grade and his first mixtape, called Kitchen Cultery.</div>
+<p>
+<a href="http://earlsweatshirt.com/"> His website</a>
+<a href="https://twitter.com/earlxsweat"> His twitter</a>
+<a href="https://www.instagram.com/soapmanwun/?hl=en"> His instagram</a> </p>
+<img width="300"<img src="earl.jpg">
+
+<div> <em>Chris Travis</em> is a male rapper. He began his career in 2011. He formed his own independent label name, Waterboyz Entertainment.</div>
+<p>
+<a href="https://www.instagram.com/kenshintravis/?hl=en"> His instagram</a>:
+<a href="https://twitter.com/KenshinTravis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter</a> </p>
+<img width="300"<img src="christravis2.jpg">
+
+<div> <em>Flatbush Zombies</em> is a rap group. The group was form in 2010.</div>
+<p>
+<a href="https://twitter.com/flatbushzombies?lang=en"> His twitter</a>
+<a href="https://www.instagram.com/flatbushzombies/?hl=en"> His instagram</a> </p>
+<img width="300"<img src="fz.jpg">
+
+<div class="btn-group">
+  <a href="lowkey.html#rap2section"><button>Rap</button></a>
+  <a href="lowkey.html#indie2section"><button>Indie</button></a>
+  <a href="lowkey.html#alternative2section"><button>Alternative</button></a>
+  <a href="lowkey.html#pop2section"><button>Pop</button></a>
+  <a href="lowkey.html#randb2section"><button>R&B</button></a>
+  <a href="lowkey.html#international2section"><button>International</button></a>
+</div>
+
+<h1 id="indie2section"> Indie </h1>
+<div> <em>Electric Guest</em> is an indie group who was formed in 2011. The group has 2 members.</div>
+<p>
+<a href="http://electricguestmusic.com/"> Their website</a>
+<a href="https://twitter.com/ElectricGuest?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Their twitter</a>
+<a href="https://twitter.com/ElectricGuest?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Their instagram</a> </p>
+<img width="300"<img src="eg.jpg">
+
+
+<div> <em>Eden</em> is an indie singer.</div>
+<p>
+<a href="http://iameden.eu/"> His website</a>
+<a href="https://www.instagram.com/iameden/?hl=en"> His instagram</a>
+<a href="https://twitter.com/iameden?lang=en"> His twitter</a> </p>
+<img width="300"<img src="eden.jpg">
+
+<div> <em>Nicotine's Famous Honey</em> is an indie group. </div>
+<p>
+<a href="https://www.instagram.com/nicthecig/?hl=en"> Their instagram</a> </p>
+<img width="300"<img src="nfc.jpg">
+
+<div> <em>MGMT</em> is an indie group that was formed in 2002.</div>
+<p>
+<a href="http://whoismgmt.com/visualize"> Their website</a>
+<a href="https://www.instagram.com/whoismgmt/"> Their instagram</a>
+<a href="https://twitter.com/whoisMGMT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Their twitter</a> </p>
+<img width="300"<img src="mgmt.jpg">
+
+<div> <em>The XX</em> is another indie group that was formed in 2005 who is from London.</div>
+<p>
+<a href="http://thexx.info/home/"> Their website</a>
+<a href="https://www.instagram.com/thexx/?hl=en"> Their instagram</a>
+<a href="https://twitter.com/the_xx?lang=en"> Their twitter</a> </p>
+<img width="300"<img src="xx.jpg">
+
+<div class="btn-group">
+  <a href="lowkey.html#rap2section"><button>Rap</button></a>
+  <a href="lowkey.html#indie2section"><button>Indie</button></a>
+  <a href="lowkey.html#alternative2section"><button>Alternative</button></a>
+  <a href="lowkey.html#pop2section"><button>Pop</button></a>
+  <a href="lowkey.html#randb2section"><button>R&B</button></a>
+  <a href="lowkey.html#international2section"><button>International</button></a>
+</div>
+
+<h1 id="alternative2section"> Alternative </h1>
+
+<div> <em> Arkells</em> is an alternative band from Canada formed in 2006.</div>
+<p>
+<a href="http://www.arkellsmusic.com/"> Their website</a>
+<a href="https://www.instagram.com/arkellsmusic/?hl=en"> Their instagram</a>
+<a href="https://twitter.com/arkellsmusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Their twitter</a> </p>
+<img width="300"<img src="arkells.jpg">
+
+<div> <em> Hippo Campus</em> is an alternative band that was formed in 2013.</div>
+<p>
+<a href="http://hippocampus.band/"> Their website</a>
+<a href="https://twitter.com/thehalocline?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Their twitter</a>
+<a href="https://www.instagram.com/thehalocline/?hl=en"> Their instagram</a> </p>
+<img width="300"<img src="hc.jpg">
+
+<div> <em> Rex Orange County</em> is an alternative singer. He first came out in 2016</div>
+<p>
+<a href="https://rexorangecounty.com/store/"> His website</a>
+<a href="https://twitter.com/rexorangecounty"> His twitter</a>
+<a href="https://www.instagram.com/rexorangecounty/?hl=en"> His instagram</a> </p>
+<img width="300"<img src="roc.jpg">
+
+<div> <em> Coleman Hell</em> is an alternative singer, that first came out in 2015.</div>
+<p>
+<a href="https://colemanhell.com/"> His website</a>
+<a href="https://twitter.com/colemanhell?lang=en"> His twitter</a>
+<a href="https://www.instagram.com/colemanhell/?hl=en"> His instagram</a> </p>
+<img width="300"<img src="coleman.jpg">
+
+<div> <em> Borns</em> is an alternative singer. He first came out in 2010.</div>
+<p>
+<a href="https://www.bornsmusic.com/"> His website</a>
+<a href="https://twitter.com/bornsmusic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter</a>
+<a href="https://www.instagram.com/bornsmusic/?hl=en"> His instagram</a> </p>
+<img width="300"<img src="borns.jpg">
+
+<div class="btn-group">
+  <a href="lowkey.html#rap2section"><button>Rap</button></a>
+  <a href="lowkey.html#indie2section"><button>Indie</button></a>
+  <a href="lowkey.html#alternative2section"><button>Alternative</button></a>
+  <a href="lowkey.html#pop2section"><button>Pop</button></a>
+  <a href="lowkey.html#randb2section"><button>R&B</button></a>
+  <a href="lowkey.html#international2section"><button>International</button></a>
+</div>
+
+<h1 id="pop2section"> Pop </h1>
+
+<div> <em> Chelsea Jade</em> is a pop singer, who first came out in 2012, from South Africa</div>
+<p>
+<a href="https://www.chelseajade.co/"> Her website</a>
+<a href="https://www.instagram.com/iamchelseajade/?hl=en"> Her instagram</a>
+<a href="https://twitter.com/chelseajade?lang=en"> Her twitter</a> </p>
+<img width="300"<img src="cj.jpg">
+
+<div> <em> King Princess</em> is a  pop singer and a song-writer who first single came out in 2018.</div>
+<p>
+<a href="https://kingprincessmusic.com/"> Her website</a>
+<a href="https://www.instagram.com/kingprincess69/?hl=en"> Her instagram</a>
+<a href="https://twitter.com/kingprincess69"> Her twitter</a> </p>
+<img width="300"<img src="kp.jpg">
+
+<div> <em> Lauv </em> is a pop singer. His first EP name, Lost in the Light, came out in 2015.</div>
+<p>
+<a href="http://www.lauvsongs.com/"> His website</a>
+<a href="https://www.instagram.com/lauvsongs/?hl=en"> His instagram</a>
+<a href="https://twitter.com/lauvsongs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter</a> </p>
+<img width="300"<img src="lauv.jpg">
+
+<div> <em> Tom Odell </em> is an english pop singer who first came in 2012. He won the Brit's Critics Choice award in 2013.</div>
+<p>
+<a href="https://www.tomodell.com/"> His website</a>:
+<a href="https://twitter.com/tompeterodell?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter</a>:
+<a href="https://www.instagram.com/tompeterodell/?hl=en"> His instagram</a>:</p>
+<img width="300"<img src="tom.jpg">
+
+<div> <em> Nathan Sykes </em> is an english pop singer who was once apart of the boyband name The Wanted. He is now just a single artist.</div>
+<p>
+<a href="http://nathansykesofficial.com/welcome"> His website</a>
+<a href="https://twitter.com/NathanSykes?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter</a>
+<a href="https://www.instagram.com/nathansykes/?hl=en"> His instagram</a> </p>
+<img width="300"<img src="nathan.jpg">
+
+<div class="btn-group">
+  <a href="lowkey.html#rap2section"><button>Rap</button></a>
+  <a href="lowkey.html#indie2section"><button>Indie</button></a>
+  <a href="lowkey.html#alternative2section"><button>Alternative</button></a>
+  <a href="lowkey.html#pop2section"><button>Pop</button></a>
+  <a href="lowkey.html#randb2section"><button>R&B</button></a>
+  <a href="lowkey.html#international2section"><button>International</button></a>
+</div>
+
+<h1 id="randb2section"> R&B </h1>
+
+<div> <em> Kyle Dion </em> is a R&B singer. He only has one album that is named, Painting Sounds.</div>
+<p>
+<a href="https://twitter.com/ikyledion?lang=en"> His instagram</a>
+<a href="https://www.instagram.com/ikyledion/?hl=en"> His twitter</a> </p>
+<img width="300"<img src="kyle.jpg">
+
+<div> <em> Brent Faiyaz </em> is a singer. His first EP came out in 2015 </div>
+<img width="300"<img src="brent.jpg">
+<p>
+<a href="https://brentfaiyaz.com/"> His website</a>
+<a href="https://twitter.com/brentfaiyaz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> His twitter </a>
+<a href="https://www.instagram.com/brentfaiyaz/?hl=en"> His instagram</a> </p>
+
+
+<div> <em> Jorja Smith </em> is a singer and she recently performed at the ESPNYS</div>
+<img width="300"<img src="jorja.jpg">
+<p>
+<a href="http://www.jorjasmith.com/"> Her website</a>
+<a href="https://www.instagram.com/jorjasmith_/?hl=en"> Her instagram</a>
+<a href="https://twitter.com/JorjaSmith?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Her twitter</a> </p>
+
+
+<div> <em> DVSN </em> is a R&B duo who first came out in 2015 and opened up for Bryson Tiller.</div>
+<p>
+<a href="https://www.instagram.com/dvsndvsn/?hl=en"> Their instagram</a>
+<a href="https://twitter.com/dvsndvsn?lang=en"> Their twitter</a>
+<a href="https://ovosound.lnk.to/morningafter?ref=https%3A//t.co/I2iG1tgAzz"> Their website</a> </p>
+<img width="300"<img src="dvsn.jpg">
+
+<div> <em> Steve Lacy </em> first came out as a single artist now he is apart of the group name, The Internet</div>
+<p>
+<a href="https://www.instagram.com/steve.lacy/?hl=en"> His instagram</a> </p>
+<img width="300"<img src="steve.jpg">
+
+
+<div class="btn-group">
+  <a href="lowkey.html#rap2section"><button>Rap</button></a>
+  <a href="lowkey.html#indie2section"><button>Indie</button></a>
+  <a href="lowkey.html#alternative2section"><button>Alternative</button></a>
+  <a href="lowkey.html#pop2section"><button>Pop</button></a>
+  <a href="lowkey.html#randb2section"><button>R&B</button></a>
+  <a href="lowkey.html#international2section"><button>International</button></a>
+</div>
+
+<h1 id="international2section">International </h1>
+
+<div> <em>Victon</em> is a South Korean boy group formed by Plan A Entertainment in 2016. They have released 4 mini albums and plan to come with more in the future!</div>
+<p>
+<a href="https://kprofiles.com/victon-members-profile/"> Learn more about the boys!</a>
+<a href="https://twitter.com/victon1109?lang=en"> Their twitter</a>
+<a href="https://www.instagram.com/victon1109/?hl=en"> Their instagram</a> </p>
+<img src="victon2.jpg">
+
+<div> <em>Imfact</em> is a South Korean boy band formed by Star Empire Entertainment in 2016. The group debuted on January 27, 2016, with their single album "Lollipop".</div>
+<a href="https://kprofiles.com/imfact-members-profile/"> Learn about the 5 members!</a>
+<a href="https://twitter.com/imfactofficial?lang=en"> Their twitter</a>
+<a href="https://www.instagram.com/official_imfact/?hl=en"> Their instagram</a> </p>
+<img src="imfact.jpg">
+
+<div> <em>Defsoul</em> is a South Korean R&B singer. He also known as JB from the boy band GOT7. He uses Defsoul as his solo "alter ego."</div>
+<a href="https://en.wikipedia.org/wiki/JB_"> Learn about him!</a></p>
+<img src="https://pm1.narvii.com/6230/fa1ea2b267c90c28c424d11a53b6fe0c100aee5c_hq.jpg">
+
+<div> <em>DPR Live</em> Hong Da-bin, better known by his stage name DPR Live, is a South Korean rapper and singer. He released his debut album, Coming to You Live, on March 15, 2017.</div>
+<a href="https://dreamperfectregime.com/"> Visit his website!</a>
+<a href="https://twitter.com/_dprlive?lang=en"> His twitter</a>
+<a href="https://www.instagram.com/dprlive/?hl=en"> His instagram</a> </p>
+<img src="dprlive.jpg">
+
+<div> <em>Jooyoung</em> is a South Korean singer-songwriter. Debuted in 2010, he is currently signed under Starship Entertainment since 2014.</div>
+<a href="https://en.wikipedia.org/wiki/Jooyoung"> Learn about him!</a>
+<a href="https://www.instagram.com/jooyoung/?hl=en"> His instagram</a> </p>
+<img src="jooyoung.jpg">
+
+</body>
+</html>
